@@ -141,6 +141,7 @@ OBJS_CRYPTO= \
 	     lmots.o \
 	     lms.o \
 	     md.o \
+		 mldsa87.o \
 	     md5.o \
 	     memory_buffer_alloc.o \
 	     nist_kw.o \

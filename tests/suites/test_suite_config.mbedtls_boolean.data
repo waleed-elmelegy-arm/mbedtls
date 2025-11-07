@@ -752,6 +752,14 @@ Config: !MBEDTLS_MEMORY_DEBUG
 depends_on:!MBEDTLS_MEMORY_DEBUG
 pass:
 
+Config: MBEDTLS_MLDSA_C
+depends_on:MBEDTLS_MLDSA_C
+pass:
+
+Config: !MBEDTLS_MLDSA_C
+depends_on:!MBEDTLS_MLDSA_C
+pass:
+
 Config: MBEDTLS_NET_C
 depends_on:MBEDTLS_NET_C
 pass:

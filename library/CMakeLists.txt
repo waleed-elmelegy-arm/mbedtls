@@ -50,6 +50,7 @@ set(src_crypto
     lms.c
     md.c
     md5.c
+    mldsa87.c
     memory_buffer_alloc.c
     nist_kw.c
     oid.c

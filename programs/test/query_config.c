@@ -1860,6 +1860,14 @@ int query_config(const char *config)
     }
 #endif /* MBEDTLS_MD_C */
 
+#if defined(MBEDTLS_MLDSA_C)
+    if( strcmp( "MBEDTLS_MLDSA_C", config ) == 0 )
+    {
+        MACRO_EXPANSION_TO_STR( MBEDTLS_MLDSA_C );
+        return( 0 );
+    }
+#endif /* MBEDTLS_MLDSA_C */
+
 #if defined(MBEDTLS_MD5_C)
     if( strcmp( "MBEDTLS_MD5_C", config ) == 0 )
     {
@@ -4429,6 +4437,10 @@ void list_config(void)
 #if defined(MBEDTLS_MD_C)
     OUTPUT_MACRO_NAME_VALUE(MBEDTLS_MD_C);
 #endif /* MBEDTLS_MD_C */
+
+#if defined(MBEDTLS_MLDSA_C)
+    OUTPUT_MACRO_NAME_VALUE(MBEDTLS_MLDSA_C);
+#endif /* MBEDTLS_MLDSA_C */
 
 #if defined(MBEDTLS_MD5_C)
     OUTPUT_MACRO_NAME_VALUE(MBEDTLS_MD5_C);
